@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="CSS/PFP.CSS">
+        <link rel="stylesheet" href="CSS/Head.CSS">
+        <link rel="stylesheet" href="CSS/SkillandEdu.CSS">
+    </head>
+    <body style="background-color: lightcyan;">
+      <div class="intro">
+        <p style="font-weight:bold; font-size:72px;">Welcome to my website!</p>
+        <p style="font-size:48px;">Scroll down</p>
+        <p style="font-size:108px;">&#x2193;</p>
+      </div>  
+      <div id="heading">
+            <button class="headbutton" onclick="topscroll()">Home</button>
+            <button class="headbutton" onclick="abtmescroll()">About Me</button>
+            <button class="headbutton" onclick="contactscroll()">Contact</button>
+            <button class="headbutton" onclick="never()">???</button>
+      </div>
+      <div class="welcome"><p>Welcome to my website!</p></div>
+      <div class="picborder">
+        <div class="abtme">
+            <p style="text-align: center; font-size: 48px;"><u>About me</u></p>
+            <p style="font-size:28px;line-height: 50px;"> Hi, my name is Lookchin. I'm currently studying at KMUTT as a freshman
+                in Department of Computer Engineering, Faculty of Engineering. 
+                and this is my self-dedicated website about myself. If you want to see it then let's go!
+            </p>
+        </div>
+        <div class="pfp">
+        <img class="image" src="Pic/Mypic.jpg">
+        </div>
+      </div>
+      <div class="sknedu">
+        <div class="skill">
+            <p style="text-align: center;font-size: 36px;"><u>Skill</u></p>
+            <p class="skilltext">&#183  English Communication</p>
+            <p class="skilltext">&#183  Teamwork Skills</p>
+            <p class="skilltext">&#183  Problem-Solving Skills</p>
+        </div>
+        <div class="edu">
+            <p style="text-align: center; font-size: 36px;"><u>Education</u></p>
+            <p style="font-size: 28px; margin-left: 20px;">Elementary school: Noppakun Suksa School</p>
+            <p style="font-size: 28px; margin-left: 20px;">Highschool: Rajprachasamasai Phaimathayom Rachadabhisek school</p>
+            <p style="font-size: 28px; margin-left: 20px">University: King Mongkut's University of Technology Thonburi</p>
+        </div>
+      </div>
+      <div class="contact">
+           <div class="contacttext"><p style="text-align: center; font-size: 36px;"><u>Contact</u></p></div>
+           <div class="contactlist">
+            <div class="contacticon" style="background-color: cadetblue;">
+                    <img class="icon" src="Pic/facebook.png">
+                <div>    <a style="margin-top: 30px;font-size:24px; display: inline-block; " href="https://www.facebook.com/rapeewich.musiphan" target="_blank">Rapeevich Musiphan</a></div>
+            </div>
+            <div class="contacticon">
+                <img class="icon" src="Pic/instagram.jpg">
+                <div>  <a style="margin-top: 30px;font-size:24px; display: inline-block;" href="https://www.instagram.com/meowz_cats/" target="_blank">meowz_cats</a></div>
+            </div>
+            <div class="contacticon" style="background-color: cadetblue;">
+                <img class="icon" src="Pic/line.png">
+                <p style="margin-top: 30px;font-size:24px ">0888734502</p>
+            </div>
+            <div class="contacticon">
+                <img class="icon" src="Pic/Discord.jpg">
+                <p style="margin-top: 30px;font-size:24px ">meowz_cats</p>
+            </div>
+           </div>
+      </div>
+      <div class="Ending">
+      </div>
+      <script>
+        function topscroll(){
+            document.documentElement.scrollTop = 0;
+        }
+        function contactscroll(){
+            document.documentElement.scrollTop = 1950;
+        }
+        function abtmescroll(){
+            document.documentElement.scrollTop = 1000;
+        }
+        function never(){
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        }
+
+        let changecolor = document.getElementById("heading");
+        window.onscroll = function() {headcolor()};
+        function headcolor(){
+             if(document.documentElement.scrollTop < 940){
+                changecolor.style.backgroundColor = "white"; 
+                changecolor.style.transitionDuration = "300ms"; }
+                else {
+                    changecolor.style.backgroundColor = "black";
+                }
+        }
+      </script>
+    </body>
+</html>
